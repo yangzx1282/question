@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  servlet:    context-path: /api
+
+logging:  level:
+    com.zhoupb.questions.mapper: debug
+
+spring:  datasource:    druid:      url: jdbc:mysql://localhost:3306/questions?serverTimezone=UTC
+      username: root
+      password: zpb6815.
+
+mybatis:
+  type-aliases-package: com.zhoupb.questions.pojo
